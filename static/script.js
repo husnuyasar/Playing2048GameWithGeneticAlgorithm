@@ -577,7 +577,7 @@ function StartGame(){
 	var button= document.getElementById('auto-play');
 	var intervalID=setInterval(function(){
 		button.click();
-	},0);
+	},500);
 	
 	
 }
