@@ -541,16 +541,16 @@ function transverse(chrom){
 	var ilkUcSon=[];
 	var ilkUcTam=[];
 	var j=0;
-	for(var i=0; i<3; i++){
+	for(var i=0; i<(chrom.length)/2; i++){
 		ilkUc[i]=chrom[i][0]+","+chrom[i][1];
 	}
 	
-	for(var i=3; i<6; i++){
+	for(var i=(chrom.length)/2; i<chrom.length; i++){
 		ilkUcSon[j]=chrom[i][2]+","+chrom[i][3];
 		j++;
 	}
 	
-	for(var i=0; i<3; i++){
+	for(var i=0; i<(chrom.length)/2; i++){
 		newChrom.push(ilkUc[i]+","+ilkUcSon[i]);
 	}
 	
@@ -558,14 +558,14 @@ function transverse(chrom){
 	var ikinciUcSon=[];
 	var ikinciUcTam=[];
 	var s=0;
-	for(var i=3; i<6; i++){
+	for(var i=(chrom.length)/2; i<chrom.length; i++){
 		ikinciUc[s]=chrom[i][0]+","+chrom[i][1];
 		s++;
 	}
-	for(var i=0; i<3; i++){
+	for(var i=0; i<(chrom.length)/2; i++){
 		ikinciUcSon[i]=chrom[i][2]+","+chrom[i][3];
 	}
-	for(var i=0; i<3; i++){
+	for(var i=0; i<(chrom.length)/2; i++){
 		newChrom.push(ikinciUc[i]+","+ikinciUcSon[i]);
 	}
 	
